@@ -1,0 +1,18 @@
+{
+  "name": "optimizar_js_css",
+  "version": "1.0.0",
+  "description": "Para unificar scripts y hojas de estilo y luego minificarlas",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ricardo Landínez <landinezrichard@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-if": "^2.0.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-useref": "^3.0.7"
+  }
+}
