@@ -31,10 +31,14 @@ var paths = {
 
 gulp.task('compress', function () {
 	return gulp.src(paths.html.main)
-	.pipe(useref.assets())
-	.pipe(gulpif('*.js', uglify()))
-	.pipe(gulpif('*.css', nano()))
-	.pipe(useref.restore())
 	.pipe(useref())
-	.pipe(gulp.dest('./dist'));
+	.pipe(gulpif('*.js', uglify()))
+	.pipe(gulpif('*.css', nano()))	
+	.pipe(gulp.dest(paths.html.dest));
 });
+
+/*
+* Tarea por defecto
+*/
+
+gulp.task('default', ['compress']);
